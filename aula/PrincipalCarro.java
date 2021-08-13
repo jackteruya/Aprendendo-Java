@@ -5,20 +5,18 @@ public class PrincipalCarro {
 
         Carro obj = new Carro();
 
+        obj.setMarca("FIAT");
         obj.setModelo("Uno Mille");
-        obj.setPlaca("NRC 1234");
-        obj.setQntPorta(4);
+        obj.setPlaca("MQK 1235");
 
         Carro obj2 = new Carro();
 
-        obj2.setModelo("Uno Way");
-        obj2.setPlaca("NRC 1254");
-        obj2.setQntPorta(4);
+        obj2.setMarca("BMW");
+        obj2.setModelo("X1");
+        obj2.setPlaca("PLD 1235");
 
-        if(obj == obj2) {
-            System.out.println("O objeto é igual");
-        } else {
-            System.out.println("Objento é diferente");
-        }
+
+        System.out.println(obj.getInformacoes());
+        System.out.println(obj2.getInformacoes());
     }
 }
